@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-TY-EHl" customClass="buttonCustom" customModule="timer" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-TY-EHl" customClass="buttonCustom" customModule="timer" customModuleProvider="target">
                                 <rect key="frame" x="37" y="475" width="150" height="150"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="START">
@@ -59,10 +59,10 @@
                                     <action selector="resetTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vxa-re-Rsi"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LBf-ty-Muq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
-                                <date key="date" timeIntervalSinceReferenceDate="458816351.81795502">
-                                    <!--2015-07-17 08:59:11 +0000-->
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBf-ty-Muq">
+                                <rect key="frame" x="0.0" y="127" width="414" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="458751780.81795502">
+                                    <!--2015-07-16 15:03:00 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="ja_JP"/>
                                 <connections>
@@ -70,7 +70,7 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNo-lT-gc0">
-                                <rect key="frame" x="43" y="212" width="329" height="200"/>
+                                <rect key="frame" x="43" y="113" width="329" height="200"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -81,6 +81,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="resetButton" destination="ddA-ej-e7S" id="eL2-sg-vlJ"/>
                         <outlet property="timeLabel" destination="fNo-lT-gc0" id="Dzl-P8-5O8"/>
                         <outlet property="timerPicker" destination="LBf-ty-Muq" id="oPJ-ey-RUb"/>
                         <outlet property="toggleButton" destination="29e-TY-EHl" id="0LJ-az-z3Z"/>
