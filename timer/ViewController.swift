@@ -69,7 +69,7 @@ class ViewController: UIViewController {
             stopTimer()
             
         } else {
-            // self.resetButton.enabled = false;
+            self.resetButton.enabled = true;
             self.timeLabel.text = changeRemainingTimeFormat(currentTotalSeconds);
             self.timerPicker.hidden = true
             self.timeLabel.hidden = false
@@ -150,11 +150,8 @@ class ViewController: UIViewController {
         self.timerPicker.hidden = false
         self.timeLabel.hidden = true
         toggleButton.tag = 0
-        // sender.enabled = true;
+        sender.enabled = false;
     }
-    
-    // Value Change後にリセットボタン押下でStartタップすると値が反映されない
-    // Resetボタンを押せないようにする
     
 }
 
